@@ -1,0 +1,147 @@
+﻿<Window x:Class="Formulario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Formulario"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <DockPanel LastChildFill="False">
+
+        <StackPanel
+            DockPanel.Dock="Bottom"
+            Margin="5,10,5,5">
+
+            <UniformGrid
+                Rows="1"
+                Columns="2">
+
+                <TextBlock
+                    Text="David López Santacruz"
+                    FontSize="20"/>
+
+                <StackPanel
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+                    
+                    <Button
+                        Content="Aceptar"
+                        Margin="0,0,5,0"
+                        Padding="30,0,30,0"/>
+                    
+                    <Button
+                        Content="Cancelar"
+                        Padding="30,0,30,0"/>
+
+                </StackPanel>
+
+            </UniformGrid>
+            
+        </StackPanel>
+
+
+        <StackPanel
+            DockPanel.Dock="Top">
+
+            <TextBlock
+                Text="Formulario"
+                HorizontalAlignment="Center"
+                FontSize="40"
+                FontWeight="Bold"
+                Margin="0,10,0,0"/>
+
+        </StackPanel>
+
+
+        <StackPanel
+            DockPanel.Dock="Right"
+            Margin="0,0,15,0">
+
+            <Image
+                Source="foto.jpg"
+                Stretch="None"/>
+            
+        </StackPanel>
+        
+
+        <StackPanel
+            DockPanel.Dock="Top"
+            Background="#68BBD1"
+            Margin="5,0,10,0">
+
+          
+                <TextBlock
+                    Text="Nombre"
+                    Margin="20,10,0,0"/>
+
+                <TextBox
+                    DockPanel.Dock="Left"
+                    Margin="10,10,10,0"
+                    />
+
+            <Image
+                    Source="info.png"
+                    Width="20"
+                    Margin="0,10,0,0"/>
+
+        </StackPanel>
+
+        <StackPanel
+            DockPanel.Dock="Top"
+            Orientation="Horizontal"
+            Margin="5,20,10,0"
+            Background="#F4F1B7">
+
+            <Border>
+
+                <StackPanel
+                    Orientation="Vertical">
+
+                    <CheckBox
+                    Content="Hacer deporte"/>
+
+                    <CheckBox
+                    Content="Viajar"/>
+
+                    <CheckBox
+                    Content="Ver Series"/>
+
+                    <CheckBox
+                    Content="Leer Comics"/>
+
+                </StackPanel>
+                
+            </Border>
+
+            <Border>
+
+                <StackPanel
+                    Orientation="Vertical">
+
+                    <RadioButton
+                        Content="Soltero"/>
+
+                    <RadioButton
+                        Content="Casado"/>
+
+                    <RadioButton
+                        Content="Divorciado"/>
+
+                    <RadioButton
+                        Content="Viudo"
+                        IsChecked="True"/>
+
+                </StackPanel>
+
+            </Border>
+
+        </StackPanel>
+
+        
+
+        
+
+    </DockPanel>
+        
+</Window>
